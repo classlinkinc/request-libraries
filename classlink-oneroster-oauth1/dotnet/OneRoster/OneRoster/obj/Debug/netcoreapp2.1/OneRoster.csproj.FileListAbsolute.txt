@@ -1,0 +1,9 @@
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\obj\Debug\netcoreapp2.1\OneRoster.csprojAssemblyReference.cache
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\obj\Debug\netcoreapp2.1\OneRoster.csproj.CoreCompileInputs.cache
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\obj\Debug\netcoreapp2.1\OneRoster.AssemblyInfoInputs.cache
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\obj\Debug\netcoreapp2.1\OneRoster.AssemblyInfo.cs
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\bin\Debug\netcoreapp2.1\ClassLink.OneRoster.deps.json
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\bin\Debug\netcoreapp2.1\ClassLink.OneRoster.dll
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\bin\Debug\netcoreapp2.1\ClassLink.OneRoster.pdb
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\obj\Debug\netcoreapp2.1\ClassLink.OneRoster.dll
+C:\Users\aroennau\RiderProjects\OneRoster\OneRoster\obj\Debug\netcoreapp2.1\ClassLink.OneRoster.pdb

@@ -1,0 +1,20 @@
+{
+  "name": "@vdhanaraj/oauth2",
+  "version": "0.0.1",
+  "description": "Provides access to the ClassLink OAuth2 authentication stack",
+  "main": "index.js",
+  "author": "Vijay Dhanaraj",
+  "dependencies": {
+    "async": "^2.3.0",
+    "request": "^2.83.0",
+    "underscore": "^1.8.3"
+  },
+  "license": "UNLICENSED",
+  "scripts": {},
+  "devDependencies": {},
+  "keywords": [
+    "OAuth2",
+    "Authentication",
+    "ClassLink"
+  ]
+}
