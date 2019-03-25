@@ -1,0 +1,11 @@
+C:\Users\aroennau\source\repos\OneRoster\OneRoster\bin\Debug\OneRoster.dll
+C:\Users\aroennau\source\repos\OneRoster\OneRoster\bin\Debug\OneRoster.pdb
+C:\Users\aroennau\source\repos\OneRoster\OneRoster\obj\Debug\OneRoster.csprojAssemblyReference.cache
+C:\Users\aroennau\source\repos\OneRoster\OneRoster\obj\Debug\OneRoster.csproj.CoreCompileInputs.cache
+C:\Users\aroennau\source\repos\OneRoster\OneRoster\obj\Debug\OneRoster.dll
+C:\Users\aroennau\source\repos\OneRoster\OneRoster\obj\Debug\OneRoster.pdb
+C:\Users\aroennau\source\repos\OneRosterDotNetFramework\OneRoster\bin\Debug\OneRoster.dll
+C:\Users\aroennau\source\repos\OneRosterDotNetFramework\OneRoster\bin\Debug\OneRoster.pdb
+C:\Users\aroennau\source\repos\OneRosterDotNetFramework\OneRoster\obj\Debug\OneRoster.csproj.CoreCompileInputs.cache
+C:\Users\aroennau\source\repos\OneRosterDotNetFramework\OneRoster\obj\Debug\OneRoster.dll
+C:\Users\aroennau\source\repos\OneRosterDotNetFramework\OneRoster\obj\Debug\OneRoster.pdb
