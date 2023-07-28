@@ -101,7 +101,7 @@ def get_user_oneroster_classes(bearer):
     return get_info(bearer, "v2/oneroster/my/classes")
 
 def get_user_oneroster_class_teachers(bearer, class_sourced_id):
-    return get_info(bearer, f"v2/oneroster/my/classes/{class_sourced_id}/teachers", "teachers")
+    return get_info(bearer, f"v2/oneroster/my/classes/{class_sourced_id}/teachers", list("teachers"))
 
 def get_user_oneroster_class_students(bearer,class_sourced_id):
-    return get_info(bearer, f"v2/oneroster/my/classes/{class_sourced_id}/students","students")
+    return get_info(bearer, f"v2/oneroster/my/classes/{class_sourced_id}/students",list("students"))
