@@ -24,15 +24,13 @@ def set_config(client_Id, client_Secret):
     if isinstance(client_Id, str):
         client_id = client_Id
     else:
-        print("clientId must be a string")
-        sys.exit()
+        raise ConfigNotSetError("clientId must be a string")
 
     if isinstance(client_Secret, str):
         client_secret = client_Secret
     else:
         client_id = None
-        print("clientSecret must be a string")
-        sys.exit()
+        raise ConfigNotSetError("clientSecret must be a string")
 
 def get_code_url(scope = None, redirect_uri = None):
     global client_id
