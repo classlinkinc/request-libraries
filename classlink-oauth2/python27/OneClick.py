@@ -92,15 +92,4 @@ def getUserChildren(bearer):
 def getUserGroups(bearer):
     return getInfo(bearer, "my/groups")
 
-def getUserOneRosterInfo(bearer):
-    return getInfo(bearer, "v2/oneroster/my/info")
-
-def getUserOneRosterClasses(bearer):
-    return getInfo(bearer, "v2/oneroster/my/classes")
-
-def getUserOneRosterClassTeachers(bearer, classSourcedId):
-    return getInfo(bearer, "v2/oneroster/my/classes/"+classSourcedId+"/teachers", "teachers")
-
-def getUserOneRosterClassStudents(bearer,classSourcedId):
-    return getInfo(bearer, "v2/oneroster/my/classes/"+classSourcedId+"/students","students")
 

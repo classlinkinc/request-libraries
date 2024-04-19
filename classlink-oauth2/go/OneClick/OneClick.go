@@ -143,30 +143,3 @@ func (oc OneClick) GetUserChildren(bearer string) (string, error) {
 func (oc OneClick) GetUserGroups(bearer string) (string, error) {
 	return oc.GetInfo(bearer, "my/groups", "")
 }
-
-// Get all the oneRoster info about the user. Only available for districts with oneroster enabled
-// Uses bearer token from getToken(code)
-func (oc OneClick) GetUserOneRosterInfo(bearer string) (string, error) {
-	return oc.GetInfo(bearer, "v2/oneroster/my/info", "")
-}
-
-// Get all the oneRoster classes the user is enrolled in. Only available for districts with oneroster enabled
-// Uses bearer token from getToken(code)
-// See https://developer.classlink.com/reference#2onerostermyclasses
-func (oc OneClick) GetUserOneRosterClasses(bearer string) (string, error) {
-	return oc.GetInfo(bearer, "v2/oneroster/my/classes", "")
-}
-
-// Get info on the teacher of the class represented by a unique sourcedId. Only available for districts with oneroster enabled
-// Uses bearer token from getToken(code)
-// See https://developer.classlink.com/reference#2onerostermyclassesclass_idteachers
-func (oc OneClick) GetUserOneRosterClassTeachers(bearer, sourcedId string) (string, error) {
-	return oc.GetInfo(bearer, "v2/oneroster/my/classes/" + sourcedId + "/teachers", "teachers")
-}
-
-// Get info on the students enrolled in a class. Only available for districts with oneroster enabled
-// Uses bearer token from getToken(code)
-// See https://developer.classlink.com/reference#2onerostermyclassesclass_idteachers-1
-func (oc OneClick) GetUserOneRosterClassStudents(bearer, sourcedId string) (string, error) {
-	return oc.GetInfo(bearer, "v2/oneroster/my/classes/" + sourcedId + "/students", "students")
-}

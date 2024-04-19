@@ -220,52 +220,5 @@ namespace ClassLink_OneClick
         /// <returns>Returns a string containing a list of JSONs with the name, groupId, and buildingId of the group.</returns>
         public string getUserGroups(string bearer) => getInfo(bearer, "my/groups");
 
-        /// <summary>
-        /// Get all the oneRoster info about the user.
-        /// </summary>
-        /// <remarks>
-        /// Note: oneroster funcitons are only available for districts with oneroster enabled.
-        /// </remarks>
-        /// <param name="bearer">The bearer token returned by <see cref="getToken(string)"/>.</param>
-        /// <returns>
-        /// Returns a JSON containing the sourceId, status, date created or
-        /// last modified, metdata, a list of orgs, role, username, a list of
-        /// userIds, first name, last name, middle name, identifiier, email,
-        /// phone and cell numbers, agents, grades, and password.
-        /// <see cref="https://developer.classlink.com/reference#v2onerostermyinfo" />
-        ///</returns>
-        public string getUserOneRosterInfo(string bearer) => getInfo(bearer, "v2/oneroster/my/info");
-
-        /// <summary>
-        /// Get all the oneRoster classesthe user is enrolled in.
-        /// </summary>
-        /// <remarks>
-        /// Note: oneroster funcitons are only available for districts with oneroster enabled
-        /// </remarks>
-        /// <param name="bearer">The bearer token returned by <see cref="getToken(string)"/>.</param>
-        /// <returns>Returns a JSON containing info listed at <see cref="https://developer.classlink.com/reference#v2onerostermyclasses"/>.</returns>
-        public string getUserOneRosterClasses(string bearer) => getInfo(bearer, "v2/oneroster/my/classes");
-
-        /// <summary>
-        /// Get info on the teacher of the class represented by a unique classSourcedId.
-        /// </summary>
-        /// <remarks>
-        /// Note: oneroster funcitons are only available for districts with oneroster enabled
-        /// </remarks>
-        /// <param name="bearer">The bearer token returned by <see cref="getToken(string)"/>.</param>
-        /// <param name="classSourcedId"></param>
-        /// <returns>Returns a list of JSONs containing info listed at <see cref="https://developer.classlink.com/reference#v2onerostermyclassesclass_idteachers" />.</returns>
-        public string getUserOneRosterClassTeachers(string bearer, string classSourcedId) => getInfo(bearer, "v2/oneroster/my/classes/" + classSourcedId + "/teachers", new string[] {"teachers"});
-
-        /// <summary>
-        /// Get info on the students enrolled in a class.
-        /// </summary>
-        /// <remarks>
-        /// Note: oneroster funcitons are only available for districts with oneroster enabled
-        /// </remarks>
-        /// <param name="bearer">The bearer token returned by <see cref="getToken(string)"/>.</param>
-        /// <param name="classSourcedId">A unique string Id for the class gotten from <see cref="getUserOneRosterClasses(string)" /></param>
-        /// <returns>Returns a list of JSONs containing student info. Info details at <see cref="https://developer.classlink.com/reference#v2onerostermyclassesclass_idteachers-1" />. </returns>
-        public string getUserOneRosterClassStudents(string bearer, string classSourcedId) => getInfo(bearer, "v2/oneroster/my/classes/" + classSourcedId + "/students", new string[] {"students"});
     }
 }
