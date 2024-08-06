@@ -170,56 +170,5 @@
          */
         public function getUserGroups($bearer) {return $this->getInfo($bearer, "my/groups");}
 
-        /**
-         * Get all the oneRoster info about the user. Only available for districts with oneroster enabled.
-         * @param string $bearer The bearer token returned by getToken($code).
-         * @return string Returns a JSON containing the sourceId, status, date created or last modified, metdata, a list of orgs, role, username, a list of userIds, first name, last name, middle name, identifier, email, phone and cell numbers, agents, grades, and password.
-         * @see https://developer.classlink.com/reference#v2onerostermyinfo
-         * @throws Exception:
-         *      - If extractNode is not on the specified request this function will throw an error.
-         *      - If the curl request does not go through this function will throw an error.
-         *      - If the the API end point sends an invalid response this will throw an error.
-         */
-        public function getUserOneRosterInfo($bearer) {return $this->getInfo($bearer, "v2/oneroster/my/info");}
-
-        /**
-         * Get all the oneRoster classes the user is enrolled in.  Only available for districts with oneroster enabled.
-         * @param string $bearer The bearer token returned by getToken($code).
-         * @return string Returns a JSON containing info listed below.
-         * @see https://developer.classlink.com/reference#v2onerostermyclasses
-         * @throws Exception:
-         *      - If extractNode is not on the specified request this function will throw an error.
-         *      - If the curl request does not go through this function will throw an error.
-         *      - If the the API end point sends an invalid response this will throw an error.
-         */
-        public function getUserOneRosterClasses($bearer) {return $this->getInfo($bearer, "v2/oneroster/my/classes");}
-
-        /**
-         * Get info on the teacher of the class represented by a unique classSourcedId.  Only available for districts with oneroster enabled.
-         * @param string $bearer The bearer token returned by getToken($code).
-         * @param string $classSourcedId A string id representing the class gotten from getUserOneRosterClasses($bearer)
-         * @return string Returns a list of JSONs containing info listed below.
-         * @see https://developer.classlink.com/reference#v2onerostermyclassesclass_idteachers
-         * @throws Exception:
-         *      - If extractNode is not on the specified request this function will throw an error.
-         *      - If the curl request does not go through this function will throw an error.
-         *      - If the the API end point sends an invalid response this will throw an error.
-         *      - If the classSourcedId is invalid this function will throw an error.
-         */
-        public function getUserOneRosterClassTeachers($bearer, $classSourcedId) {return $this->getInfo($bearer, "v2/oneroster/my/classes/" . $classSourcedId . "/teachers", "teachers");}
-
-        /**
-         * Get info on the students enrolled in a class.  Only available for districts with oneroster enabled.
-         * @param string $bearer The bearer token returned by getToken($code).
-         * @param string $classSourcedId A string id representing the class gotten from getUserOneRosterClasses($bearer)
-         * @return string Returns a list of JSONs containing student info.
-         * @see https://developer.classlink.com/reference#v2onerostermyclassesclass_idteachers-1
-         * @throws Exception:
-         *      - If extractNode is not on the specified request this function will throw an error.
-         *      - If the curl request does not go through this function will throw an error.
-         *      - If the the API end point sends an invalid response this will throw an error.
-         *      - If the classSourcedId is invalid this function will throw an error.
-         */
-        public function getUserOneRosterClassStudents($bearer, $classSourcedId) {return $this->getInfo($bearer, "v2/oneroster/my/classes/" . $classSourcedId . "/students", "students");}
     }
 ?>

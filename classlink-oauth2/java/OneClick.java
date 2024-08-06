@@ -185,43 +185,4 @@ public class OneClick {
 	 */
 	public String getUserGroups(String bearer) throws IOException { return this.getInfo(bearer, "my/groups"); }
 
-	/**
-	 * Get all the oneRoster info about the user. Only available for districts with oneroster enabled.
-	 * @param bearer The bearer token returned by getToken(String code).
-	 * @return Returns a JSON containing the sourceId, status, date created or last modified, metdata, a list of orgs, role, username, a list of userIds, first name, last name, middle name, identifier, email, phone and cell numbers, agents, grades, and password.
-	 * @see https://developer.classlink.com/reference#v2onerostermyinfo
-	 * @throws IOException
-	 */
-	public String getUserOneRosterInfo(String bearer) throws IOException { return this.getInfo(bearer, "v2/oneroster/my/info"); }
-
-	/**
-	 * Get all the oneRoster classes the user is enrolled in.  Only available for districts with oneroster enabled.
-	 * @param bearer The bearer token returned by getToken(String code).
-	 * @return Returns a JSON containing info listed below.
-	 * @see https://developer.classlink.com/reference#v2onerostermyclasses
-	 * @throws IOException
-	 */
-	public String getUserOneRosterClasses(String bearer) throws IOException { return this.getInfo(bearer, "v2/oneroster/my/classes"); }
-
-	/**
-	 * Get info on the teacher of the class represented by a unique classSourcedId.  Only available for districts with oneroster enabled.
-	 * @param bearer The bearer token returned by getToken(String code).
-	 * @param classSourcedId A string id representing the class obtained from getUserOneRosterClasses(String bearer)
-	 * @return Returns a list of JSONs containing info listed below.
-	 * @see https://developer.classlink.com/reference#v2onerostermyclassesclass_idteachers
-	 * @throws IOException
-	 */
-	public String getUserOneRosterClassTeachers(String bearer, String classSourcedId) throws IOException { return this.getInfo(bearer, "v2/oneroster/my/classes/" + classSourcedId + "/teachers", "teachers"); }
-
-	/**
-	 * Get info on the students enrolled in a class.  Only available for districts with oneroster enabled.
-	 * @param bearer The bearer token returned by getToken(String code).
-	 * @param classSourcedId A string id representing the class obtained from getUserOneRosterClasses(String bearer)
-	 * @return Returns a list of JSONs containing student info.
-	 * @see https://developer.classlink.com/reference#v2onerostermyclassesclass_idteachers-1
-	 * @throws IOException
-	 */
-	public String getUserOneRosterClassStudents(String bearer, String classSourcedId) throws IOException { return this.getInfo(bearer, "v2/oneroster/my/classes/" + classSourcedId + "/students", "students"); }
-
-
 }
