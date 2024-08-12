@@ -19,15 +19,6 @@
         }
 
         /**
-         * ClassLink Oauth2 helper destructor.
-         */
-        function __destruct()
-        {
-            unset($clientId);
-            unset($clientSecret);
-        }
-
-        /**
          * Get the URL for where the client can get their access code
          * @param string $scope The scope part of the query string in the returned URL. There are 3 scopes that can be used:
          *      - profile:  Access to user identity and user specific information info.
